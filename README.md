@@ -149,6 +149,10 @@ php -v
 Composer is a dependency and package manager for PHP.
 
 - Visit the [Composer Website](https://getcomposer.org/download/) and follow the instructions (make sure to do a "global install" so you can run composer from any directory).
+- Place Composer's system-wide vendor bin directory in your `$PATH` by adding the following line in the `~/.zshrc` file:
+```bash
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+```
 - Test the installation by running the following commands in the Terminal:
 ```bash
 composer
